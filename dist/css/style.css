@@ -5,13 +5,27 @@ body,
 .view{
     height: 100%;
 }
+.first {
+    background-color: #CEC0C0;
+}
+.second {
+    background-color: #CEC0C0;
+}
 
 .carousel{
     height: 50%;
-    
+
+}
+
+.carousel-inner {
+    color: #FFFEFE;
 }
 .carousel .carousel-inner{
     height: 100%;
+}
+input:focus:not([readonly]) {
+    box-shadow: 0 1px 0 0 !important;
+    border-bottom: 1px solid !important;
 }
 
 .carousel .carousel-inner .carousel-item,
@@ -26,6 +40,18 @@ body,
     transform: scale(2.0);
 }
 
+.carousel-fade {
+    opacity: 0.8;
+}
+
+
+.card-body {
+    background-color: #D1CFCF;
+    opacity: 0.9;
+}
+.page-item.active .page-link {
+    background-color: #CEC0C0 !important;
+}
 
 @media (max-width: 776px) {
     .carousel {
