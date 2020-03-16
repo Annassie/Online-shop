@@ -5,8 +5,13 @@ body,
 .view{
     height: 100%;
 }
+
+.rounded {
+    width: 40px;
+    height: 40px;
+}
 .first {
-    background-color: #CEC0C0;
+    background-color: #bca9a9;
 }
 .second {
     background-color: #CEC0C0;
@@ -23,9 +28,14 @@ body,
 .carousel .carousel-inner{
     height: 100%;
 }
-input:focus:not([readonly]) {
+input:focus:not([readonly]),
+textarea:focus:not([readonly]) {
     box-shadow: 0 1px 0 0 !important;
     border-bottom: 1px solid !important;
+}
+
+.form-control:hover {
+    border-color: #a58d8d !important;
 }
 
 .carousel .carousel-inner .carousel-item,
@@ -44,6 +54,24 @@ input:focus:not([readonly]) {
     opacity: 0.8;
 }
 
+.dropdown-menu {
+    background-color: #CEC0C0;
+}
+
+.dropdown-item {
+    color: #FFFEFE !important;
+}
+
+
+
+
+a:focus:not([readonly]) {
+    outline: 0;
+}
+
+.dropdown-menu > a:hover {
+    background-color: #a58d8d;
+}
 
 .card-body {
     background-color: #D1CFCF;
@@ -53,13 +81,45 @@ input:focus:not([readonly]) {
     background-color: #CEC0C0 !important;
 }
 
+.card{
+    height: auto;
+}
+
+.section {
+    width: 60%;
+
+}
+
+#send {
+    background-color: #bca9a9 !important;
+    color: #FFFEFE;
+}
+
+.page-footer {
+    background-color: #a58d8d;
+}
+
+@media (max-width: 580px) {
+    .paragraph-indent {
+        margin: 2em auto 0 auto;
+        padding: 2em 3em 0 3em;
+    }
+    .column {
+        margin: auto auto;
+        padding: 1em 3em;
+    }
+    .section {
+        width: auto;
+    }
+}
 @media (max-width: 776px) {
     .carousel {
         height: 100%;
     }
+    .section {
+        width: auto;
+    }
 }
 
-.page-footer {
-    background-color: #929FBA;
-}
+
 

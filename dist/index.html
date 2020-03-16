@@ -5,17 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Verkkokauppa by Anna</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb-free.min.css" rel="stylesheet">
+    <link href="./css/mdb-free.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <style>
         html,
         body,
@@ -25,12 +25,18 @@
             background-color: #FCF6F6;
         }
 
+        @media (max-width: 580px) {
+            #carousel-ex {
+                height: 55vh;
+            }
+        }
+
         @media (max-width: 740px) {
             html,
             body,
             header,
             .carousel {
-                height: 100vh;
+                height: 55vh;
             }
         }
 
@@ -39,7 +45,7 @@
             body,
             header,
             .carousel {
-                height: 100vh;
+                height: 55vh;
             }
         }
     </style>
@@ -54,7 +60,8 @@
         <div class="container">
 
             <a href="#" class="navbar-brand waves-effect">
-                <strong class="brand"> WBD</strong>
+                <!-- <strong class="brand"> WBD</strong> -->
+                <img src="/img/svg/first_1_orange.svg" class="rounded mx-auto d-block" alt="...">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
@@ -72,7 +79,7 @@
                         <a href="#" class="nav-link waves-effect">Product</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link waves-effect">About us</a>
+                        <a href="aboutus.html" class="nav-link waves-effect">About us</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link waves-effect">Blog</a>
@@ -136,7 +143,7 @@
                                 <strong>In et est sit amet nibh pellentesque pulvinar. Aenean efficitur purus quis diam varius, vitae convallis metus scelerisque.</strong>
                             </p>
                             <a href="#" class="btn btn-outline-white btn-lg">
-                                Tutustu
+                                Discover
                             </a>
                         </div>
                     </div>
@@ -163,7 +170,7 @@
                                 <strong>In et est sit amet nibh pellentesque pulvinar. Aenean efficitur purus quis diam varius, vitae convallis metus scelerisque.</strong>
                             </p>
                             <a href="#" class="btn btn-outline-white btn-lg">
-                                Tutustu
+                                Discover
                             </a>
                         </div>
                     </div>
@@ -190,7 +197,7 @@
                                 <strong>In et est sit amet nibh pellentesque pulvinar. Aenean efficitur purus quis diam varius, vitae convallis metus scelerisque.</strong>
                             </p>
                             <a href="#" class="btn btn-outline-white btn-lg">
-                                Tutustu
+                                Discover
                             </a>
                         </div>
                     </div>
@@ -226,16 +233,25 @@
                 <div class="collapse navbar-collapse" id="nextNav">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a href="#" class="nav-link">All</a>
+                            <a href="index.html" class="nav-link">All</a>
                         </li>
-                        <li class="nav-item ">
-                            <a href="#" class="nav-link">Women</a>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" id="dropdownMenuLink"
+                               aria-haspopup="true" aria-expanded="false">Women</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="women.html">All</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Dresses</a>
+                                <a class="dropdown-item" href="#">Trousers</a>
+                                <a class="dropdown-item" href="#">Skirts</a>
+                                <a class="dropdown-item" href="#">T-shirt</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Men</a>
+                            <a href="men.html" class="nav-link">Men</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Children</a>
+                            <a href="children.html" class="nav-link">Children</a>
                         </li>
                     </ul>
 
@@ -304,14 +320,14 @@
                             <!-- Description of piece -->
                             <div class="card-body text-center">
                                 <a href="#" class="grey-text">
-                                    <h5>T-shirt</h5>
+                                    <h5>Woman's T-shirts</h5>
                                 </a>
 
                                 <h5>
                                     <strong>
                                         <a href="#" class="dark-grey-text">
-                                            Woman's t-shirt
-                                            <span class="badge">NEW</span>
+                                            T-shirt
+                                            <span class="badge ml-1">NEW</span>
                                         </a>
                                     </strong>
                                 </h5>
@@ -369,7 +385,7 @@
 
                             <!-- Image of piece -->
                             <div class="view overly">
-                                <img class="card-img-top" src="https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                                <img class="card-img-top" src="https://images.pexels.com/photos/1179141/pexels-photo-1179141.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
                                 <a href="#">
                                     <div class="mask rgba-white-slight"></div>
                                 </a>
@@ -378,20 +394,20 @@
                             <!-- Description of piece -->
                             <div class="card-body text-center">
                                 <a href="#" class="grey-text">
-                                    <h5>T-shirt</h5>
+                                    <h5>Woman's dresses</h5>
                                 </a>
 
                                 <h5>
                                     <strong>
                                         <a href="#" class="dark-grey-text">
-                                            Woman's t-shirt
-                                            <span class="badge">NEW</span>
+                                            Dress
+                                            <span class="badge ml-1">NEW</span>
                                         </a>
                                     </strong>
                                 </h5>
                                 <!-- The price of the piece -->
                                 <h4 class="font-weight-bold">
-                                    <strong>30€</strong>
+                                    <strong>50€</strong>
                                 </h4>
 
                             </div>
